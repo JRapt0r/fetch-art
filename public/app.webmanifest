@@ -1,0 +1,25 @@
+{
+  "name": "Fetch-Art",
+  "short_name": "Fetch-Art",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple web app for finding high quality album art",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "homescreen192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "homescreen512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
