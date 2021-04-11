@@ -2,8 +2,10 @@
   import AlbumResult from "./lib/AlbumResult.svelte";
   import GithubCorner from "./lib/GithubCorner.svelte";
   let promise = { results: [] };
+  let queried;
 
   async function fetch_art(query) {
+    queried = query;
     let url = new URL("search", "https://itunes.apple.com");
     url.searchParams.set("term", query);
     url.searchParams.set("entity", "album");
@@ -48,11 +50,15 @@
   <div class="flex flex-col items-center">
     <div class="py-5 space-y-8">
       {#await promise}
-        <div />
+        <div></div>
       {:then { results }}
-        {#each results as result}
-          <AlbumResult data={result} />
-        {/each}
+        {#if results.length > 0}
+          {#each results as result}
+            <AlbumResult data={result} />
+          {/each}
+        {:else if queried?.length > 0}
+          <div class="font-semibold">No artwork found for '{queried}'</div>
+        {/if}
       {:catch error}
         <div class="font-semibold text-red-700">Error: {error.message}</div>
       {/await}
