@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter", "Roboto", "sans-serif"],
-        brand: ["Poppins", "sans-serif"]
+        brand: ["Poppins", "Inter", "Roboto", "sans-serif"]
       },
       colors: {
         orange: colors.orange,
