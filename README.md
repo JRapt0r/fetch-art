@@ -1,6 +1,6 @@
 # Fetch-Art
 
-A simple web app for finding high quality album art. Fetch-Art provides a GUI for querying the iTunes api and returning the highest resolution artwork available. All artwork is hosted by Apple.
+A simple web app for finding high quality album art. Fetch-Art provides a GUI for querying the iTunes API and returns the highest resolution artwork available. All artwork is hosted by Apple.
 
 <p align="center">
   <a href="https://fetch-art.pages.dev" rel="noreferrer noopener" target="_blank">
