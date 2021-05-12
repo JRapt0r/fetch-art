@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   mode: "jit",
   purge: ['./index.html', './src/**/*.{svelte,js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -15,8 +15,6 @@ module.exports = {
       }
     },
   },
-  variants: {
-    extend: {},
-  },
+  variants: {},
   plugins: [],
 }
